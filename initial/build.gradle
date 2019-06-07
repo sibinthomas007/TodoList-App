@@ -14,7 +14,7 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 bootJar {
-    baseName = 'gs-accessing-data-mysql'
+    baseName = 'todo'
     version =  '0.1.0'
 }
 
@@ -30,6 +30,8 @@ dependencies {
 
     // JPA Data (We are going to use Repositories, Entities, Hibernate, etc...)
     compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+    compile 'org.json:json:20171018'
+
 
     // Use MySQL Connector-J
     compile 'mysql:mysql-connector-java'
